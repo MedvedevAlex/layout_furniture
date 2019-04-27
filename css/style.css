@@ -23,6 +23,44 @@
     src: url(/fonts/PTSerif.ttf);
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon.eot?8pq1w');
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon.eot?#iefix8pq1w') format('embedded-opentype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon.woff?8pq1w') format('woff'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon.ttf?8pq1w') format('truetype'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon.svg?8pq1w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+    content: "\e600";
+}
+.icon-paint-format:before {
+    content: "\e601";
+}
+.icon-mug:before {
+    content: "\e602";
+}
+.icon-rocket:before {
+    content: "\e603";
+}
+
 body {
     background-color: #eeeeed;
 }
@@ -31,6 +69,12 @@ body {
     margin-top: 3%;
 }
 
+.welcome_screen {
+    background: url(../img/bg-header.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    height: 50vh;
+}
 .main_logo_furniture {
     width: 297px;
     height: 56px;
@@ -99,8 +143,8 @@ body {
 
 .headline {
     position: absolute;
-    top: 260px;
-    left: 364px;
+    top: 301px;
+    left: 338px;
     width: 272px;
 }
 
@@ -124,9 +168,8 @@ body {
 
 .company_headline h2 {
     font-family: PTSerif, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: #13335a;
-    font-weight: 600;
     letter-spacing: 0.05em;
 }
 
@@ -228,7 +271,72 @@ body {
     margin-left: 30px;
 }
 
-.line_top h2:before,
-.line_top h2:after {
-    top: 0;
+.row_reset {
+    margin: 0;
+}
+
+.div_icon span {
+    font-size: 5em;
+    color: #ef563e;
+}
+
+.advantages_list ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages_list ul li {
+    float: left;
+    height: 126px;
+    color: #d15741;
+    width: 19.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.advantages_list span {
+    padding: 15px 0;
+    font-size: 5em;
+    display: block;
+    color: #d15741;
+    transition: all .2s ease-in-out;
+}
+
+.advantages_list li:hover span {
+    transform: translateY(-10px);
+}
+
+.advantages_list p {
+    font-family: HelveticaMedium, sans-serif;
+    font-size: 15px;
+    color: #1d1d1d;
+}
+
+.li_rocket {
+    width: 85%;
+    margin-left: 15px;
+}
+
+.li_mug {
+    margin-right: 15px;
+}
+
+.economy-bg {
+    background: url(../img/bg-economy.jpg) no-repeat center 61%;
+    background-size: cover;
+    min-height: 500px;
+    height: 50vh;
+    position: relative;
+}
+
+.form_opacity {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background: white;
+    opacity: 0.9;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -200px;
 }
