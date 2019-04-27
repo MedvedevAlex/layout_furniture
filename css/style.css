@@ -130,22 +130,33 @@ body {
     letter-spacing: 0.05em;
 }
 
-.line {
+.headline_h2 h2 > span {
     display: inline-block;
-    width: 40px;
-    height: 1px;
-    background-color: #d15741;
-    position: absolute;
-    margin: 8px 0px 0px -110px;
+    vertical-align: middle;
+    white-space: normal;
+    max-width: 90%;
 }
 
-.line::before {
-    position: absolute;
+.headline_h2 h2:before,
+.headline_h2 h2:after {
     content: '';
-    width: 40px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    width: 3%;
     height: 1px;
-    background-color: #d15741;
-    margin-left: 159px;
+    vertical-align: middle;
+    background: #d15741;
+}
+
+.headline_h2 h2:before {
+    left: -10px;
+    margin-left: -50%;
+}
+
+.headline_h2 h2:after {
+    left: 10px;
+    margin-right: -50%;
 }
 
 .mebel_h2 {
@@ -215,4 +226,9 @@ body {
     width: 350px;
     height: 300px;
     margin-left: 30px;
+}
+
+.line_top h2:before,
+.line_top h2:after {
+    top: 0;
 }
