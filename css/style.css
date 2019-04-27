@@ -93,14 +93,14 @@ body {
     font-size: 8px;
 }
 .welcome_screen img{
-    width: 100vw;
+    width: 98.7vw;
     position: relative;
 }
 
 .headline {
     position: absolute;
-    top: 27%;
-    left: 23%;
+    top: 260px;
+    left: 364px;
     width: 272px;
 }
 
@@ -148,21 +148,31 @@ body {
     margin-left: 159px;
 }
 
-.company_screen img {
-    width: 400px;
+.mebel_h2 {
+    font-family: HelveticaMedium, sans-serif;
+    margin: 0 auto;
 }
 
 .company_text {
     background-color: white;
     border: 1px solid #dcdcdb;
     box-shadow: 0 2px 2px #dcdcdb, 0 2px 2px #dcdcdb;
+    width: 950px;
 }
 
 .company_text p {
-    width: 630px;
+    width: 500px;
     font-family: HelveticaMedium, sans-serif;
     font-size: 10px;
     margin: 20px 5px;
+}
+
+.company_bg {
+    background: url(../img/bg-company.jpg) no-repeat center; /* 50% 50% centers image in div */
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    margin-right: 30px;
 }
 
 .company_href {
@@ -173,4 +183,36 @@ body {
     color: white;
     padding: 10px 30px;
     margin-left: 3px;
+}
+
+.mebel_text {
+    background-color: white;
+    border: 1px solid #dcdcdb;
+    box-shadow: 0 2px 2px #dcdcdb, 0 2px 2px #dcdcdb;
+}
+
+.mebel_text p {
+    width: 500px;
+    font-family: HelveticaMedium, sans-serif;
+    font-size: 10px;
+    margin: 20px 0 15px 220px;
+}
+/*Цифры 01 и 02*/
+.number {
+    position: absolute;
+    font-family: HelveticaMedium, sans-serif;
+    color: #d15741;
+    margin: 22px 0 0 175px;
+}
+/*Цифра 02*/
+.number2 {
+    margin-top: 64px;
+}
+
+.mebel_bg {
+    background: url(../img/bg-mebel.jpg) no-repeat center; /* 50% 50% centers image in div */
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    margin-left: 30px;
 }
